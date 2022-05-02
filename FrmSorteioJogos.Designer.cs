@@ -46,11 +46,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMegasena = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblResultMega = new System.Windows.Forms.Label();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.lblResultMega = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.btnParar = new System.Windows.Forms.Button();
             this.lblTeste = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -199,6 +200,13 @@
             this.panel2.Size = new System.Drawing.Size(393, 94);
             this.panel2.TabIndex = 14;
             // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(20, 73);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(353, 11);
+            this.progressBar2.TabIndex = 1;
+            // 
             // lblResultMega
             // 
             this.lblResultMega.Location = new System.Drawing.Point(21, 32);
@@ -207,13 +215,6 @@
             this.lblResultMega.TabIndex = 0;
             this.lblResultMega.Text = "Mega-Sena";
             this.lblResultMega.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(20, 73);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(353, 11);
-            this.progressBar2.TabIndex = 1;
             // 
             // btnParar
             // 
@@ -233,11 +234,22 @@
             this.lblTeste.TabIndex = 16;
             this.lblTeste.Text = "label1";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(593, 207);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 17;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // FrmSorteioJogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 449);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lblTeste);
             this.Controls.Add(this.btnParar);
             this.Controls.Add(this.btnMegasena);
@@ -287,5 +299,6 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button btnParar;
         private System.Windows.Forms.Label lblTeste;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
