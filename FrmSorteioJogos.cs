@@ -90,6 +90,7 @@ namespace _03AndreRandom72B
             if(colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 btnCorzinha.BackColor = colorDialog1.Color;
+                btnCorzinha2.BackColor = colorDialog1.Color;
                 lblCorzinha.Text = colorDialog1.Color.ToString();
             }
 
@@ -134,8 +135,6 @@ namespace _03AndreRandom72B
         {
             string card = "";
             string num = "";
-
-            a;
 
             for (int i = 1; i <= 6; i++)
             {

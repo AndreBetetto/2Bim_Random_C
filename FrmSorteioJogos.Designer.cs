@@ -51,7 +51,7 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.btnParar = new System.Windows.Forms.Button();
             this.lblTeste = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.btnCorzinha2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,6 +160,7 @@
             this.lbl5.Size = new System.Drawing.Size(13, 13);
             this.lbl5.TabIndex = 10;
             this.lbl5.Text = "0";
+            this.lbl5.Visible = false;
             // 
             // lbl6
             // 
@@ -169,6 +170,7 @@
             this.lbl6.Size = new System.Drawing.Size(35, 13);
             this.lbl6.TabIndex = 11;
             this.lbl6.Text = "label1";
+            this.lbl6.Visible = false;
             // 
             // panel1
             // 
@@ -233,23 +235,22 @@
             this.lblTeste.Size = new System.Drawing.Size(35, 13);
             this.lblTeste.TabIndex = 16;
             this.lblTeste.Text = "label1";
+            this.lblTeste.Visible = false;
             // 
-            // checkBox1
+            // btnCorzinha2
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(593, 207);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 17;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.btnCorzinha2.Location = new System.Drawing.Point(-3, -1);
+            this.btnCorzinha2.Name = "btnCorzinha2";
+            this.btnCorzinha2.Size = new System.Drawing.Size(804, 23);
+            this.btnCorzinha2.TabIndex = 17;
+            this.btnCorzinha2.UseVisualStyleBackColor = true;
             // 
             // FrmSorteioJogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 449);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.btnCorzinha2);
             this.Controls.Add(this.lblTeste);
             this.Controls.Add(this.btnParar);
             this.Controls.Add(this.btnMegasena);
@@ -299,6 +300,6 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button btnParar;
         private System.Windows.Forms.Label lblTeste;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button btnCorzinha2;
     }
 }
