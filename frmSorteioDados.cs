@@ -16,6 +16,7 @@ namespace _03AndreRandom72B
         private Random sort = new Random();
         int vit1 = 0;
         int vit2 = 0;
+        int emp = 0;
         public frmSorteioDados()
         {
             InitializeComponent();
@@ -61,8 +62,14 @@ namespace _03AndreRandom72B
             {
                 vit2++;
             }
+            else
+                if(resultado == 3)
+            {
+                emp++;
+            }
             lblPlacarJog1.Text = vit1.ToString();
             lblPlacarJog2.Text = vit2.ToString();
+            lblEmpates.Text = emp.ToString();
         }
    
     }

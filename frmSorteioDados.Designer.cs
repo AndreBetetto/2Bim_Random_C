@@ -36,8 +36,10 @@
             this.txtboxNickName1 = new System.Windows.Forms.TextBox();
             this.txtboxNickName2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblEmpates = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // picBoxQuadradro1
@@ -79,7 +81,7 @@
             // 
             // btnPlay
             // 
-            this.btnPlay.Location = new System.Drawing.Point(227, 254);
+            this.btnPlay.Location = new System.Drawing.Point(227, 285);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(79, 23);
             this.btnPlay.TabIndex = 4;
@@ -105,10 +107,20 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumSpringGreen;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblEmpates);
             this.panel1.Location = new System.Drawing.Point(80, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(384, 230);
+            this.panel1.Size = new System.Drawing.Size(384, 269);
             this.panel1.TabIndex = 7;
+            // 
+            // lblEmpates
+            // 
+            this.lblEmpates.BackColor = System.Drawing.Color.LightGray;
+            this.lblEmpates.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEmpates.Location = new System.Drawing.Point(146, 233);
+            this.lblEmpates.Name = "lblEmpates";
+            this.lblEmpates.Size = new System.Drawing.Size(79, 23);
+            this.lblEmpates.TabIndex = 8;
             // 
             // frmSorteioDados
             // 
@@ -127,6 +139,7 @@
             this.Text = "SorteioDados";
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro2)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,5 +155,6 @@
         private System.Windows.Forms.TextBox txtboxNickName1;
         private System.Windows.Forms.TextBox txtboxNickName2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblEmpates;
     }
 }
