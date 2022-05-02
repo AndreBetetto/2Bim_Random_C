@@ -69,6 +69,9 @@
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSorteioDados.resx">
+      <DependentUpon>frmSorteioDados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSorteioJogos.resx">
       <DependentUpon>FrmSorteioJogos.cs</DependentUpon>
     </EmbeddedResource>
