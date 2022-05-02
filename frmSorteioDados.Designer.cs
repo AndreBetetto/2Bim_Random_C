@@ -37,9 +37,14 @@
             this.txtboxNickName2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblEmpates = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTextoVencedor = new System.Windows.Forms.Label();
+            this.lblResultadoVencedor = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro2)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // picBoxQuadradro1
@@ -48,6 +53,7 @@
             this.picBoxQuadradro1.Location = new System.Drawing.Point(88, 42);
             this.picBoxQuadradro1.Name = "picBoxQuadradro1";
             this.picBoxQuadradro1.Size = new System.Drawing.Size(147, 142);
+            this.picBoxQuadradro1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxQuadradro1.TabIndex = 0;
             this.picBoxQuadradro1.TabStop = false;
             // 
@@ -58,6 +64,7 @@
             this.picBoxQuadradro2.MaximumSize = new System.Drawing.Size(222, 227);
             this.picBoxQuadradro2.Name = "picBoxQuadradro2";
             this.picBoxQuadradro2.Size = new System.Drawing.Size(147, 142);
+            this.picBoxQuadradro2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxQuadradro2.TabIndex = 1;
             this.picBoxQuadradro2.TabStop = false;
             // 
@@ -122,11 +129,54 @@
             this.lblEmpates.Size = new System.Drawing.Size(79, 23);
             this.lblEmpates.TabIndex = 8;
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(13, 415);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Voltar";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.Controls.Add(this.lblResultadoVencedor);
+            this.panel2.Controls.Add(this.lblTextoVencedor);
+            this.panel2.Location = new System.Drawing.Point(544, 92);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(215, 134);
+            this.panel2.TabIndex = 9;
+            // 
+            // lblTextoVencedor
+            // 
+            this.lblTextoVencedor.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextoVencedor.Location = new System.Drawing.Point(3, 14);
+            this.lblTextoVencedor.Name = "lblTextoVencedor";
+            this.lblTextoVencedor.Size = new System.Drawing.Size(209, 46);
+            this.lblTextoVencedor.TabIndex = 0;
+            this.lblTextoVencedor.Text = "O vencedor é...";
+            this.lblTextoVencedor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblResultadoVencedor
+            // 
+            this.lblResultadoVencedor.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoVencedor.ForeColor = System.Drawing.Color.Maroon;
+            this.lblResultadoVencedor.Location = new System.Drawing.Point(3, 78);
+            this.lblResultadoVencedor.Name = "lblResultadoVencedor";
+            this.lblResultadoVencedor.Size = new System.Drawing.Size(209, 46);
+            this.lblResultadoVencedor.TabIndex = 1;
+            this.lblResultadoVencedor.Text = "label2";
+            this.lblResultadoVencedor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmSorteioDados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtboxNickName2);
             this.Controls.Add(this.txtboxNickName1);
             this.Controls.Add(this.btnPlay);
@@ -140,6 +190,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro2)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,5 +207,9 @@
         private System.Windows.Forms.TextBox txtboxNickName2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblEmpates;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblResultadoVencedor;
+        private System.Windows.Forms.Label lblTextoVencedor;
     }
 }

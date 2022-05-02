@@ -70,7 +70,28 @@ namespace _03AndreRandom72B
             lblPlacarJog1.Text = vit1.ToString();
             lblPlacarJog2.Text = vit2.ToString();
             lblEmpates.Text = emp.ToString();
+
+            if(vit1 > vit2 && vit1 > emp)
+            {
+                lblResultadoVencedor.Text = txtboxNickName1.Text;
+            }
+            else
+                if(vit2 > vit1 && vit2 > emp)
+            {
+                lblResultadoVencedor.Text = txtboxNickName2.Text;
+            }
+            else
+                if (emp > vit1 && emp > vit2)
+            {
+                lblResultadoVencedor.Text = "Empate";
+            }
         }
-   
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormRandom f2 = new FormRandom();
+            f2.ShowDialog();
+        }
     }
 }
