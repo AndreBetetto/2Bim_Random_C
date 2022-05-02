@@ -53,6 +53,7 @@
             // 
             this.picBoxQuadradro2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picBoxQuadradro2.Location = new System.Drawing.Point(308, 42);
+            this.picBoxQuadradro2.MaximumSize = new System.Drawing.Size(222, 227);
             this.picBoxQuadradro2.Name = "picBoxQuadradro2";
             this.picBoxQuadradro2.Size = new System.Drawing.Size(147, 142);
             this.picBoxQuadradro2.TabIndex = 1;
