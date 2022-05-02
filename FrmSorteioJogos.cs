@@ -135,7 +135,7 @@ namespace _03AndreRandom72B
             string card = "";
             string num = "";
 
-            
+            a
 
             for (int i = 1; i <= 6; i++)
             {
