@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _03AndreRandom72B
 {
-    public partial class SorteioDados : Form
+    public partial class frmSorteioDados : Form
     {
-        public SorteioDados()
+        public frmSorteioDados()
         {
             InitializeComponent();
         }

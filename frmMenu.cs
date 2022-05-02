@@ -23,5 +23,12 @@ namespace _03AndreRandom72B
             FrmSorteioJogos f1 = new FrmSorteioJogos();
             f1.ShowDialog();
         }
+
+        private void btnDados_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmSorteioDados f2 = new frmSorteioDados();
+            f2.ShowDialog();
+        }
     }
 }

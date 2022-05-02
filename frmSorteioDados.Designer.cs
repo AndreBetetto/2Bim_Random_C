@@ -1,6 +1,6 @@
 ﻿namespace _03AndreRandom72B
 {
-    partial class SorteioDados
+    partial class frmSorteioDados
     {
         /// <summary>
         /// Required designer variable.
