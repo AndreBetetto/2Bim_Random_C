@@ -35,13 +35,15 @@
             this.btnPlay = new System.Windows.Forms.Button();
             this.txtboxNickName1 = new System.Windows.Forms.TextBox();
             this.txtboxNickName2 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro2)).BeginInit();
             this.SuspendLayout();
             // 
             // picBoxQuadradro1
             // 
-            this.picBoxQuadradro1.Location = new System.Drawing.Point(88, 37);
+            this.picBoxQuadradro1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picBoxQuadradro1.Location = new System.Drawing.Point(88, 42);
             this.picBoxQuadradro1.Name = "picBoxQuadradro1";
             this.picBoxQuadradro1.Size = new System.Drawing.Size(147, 142);
             this.picBoxQuadradro1.TabIndex = 0;
@@ -49,7 +51,8 @@
             // 
             // picBoxQuadradro2
             // 
-            this.picBoxQuadradro2.Location = new System.Drawing.Point(308, 37);
+            this.picBoxQuadradro2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picBoxQuadradro2.Location = new System.Drawing.Point(308, 42);
             this.picBoxQuadradro2.Name = "picBoxQuadradro2";
             this.picBoxQuadradro2.Size = new System.Drawing.Size(147, 142);
             this.picBoxQuadradro2.TabIndex = 1;
@@ -59,7 +62,7 @@
             // 
             this.lblPlacarJog1.BackColor = System.Drawing.Color.LightGray;
             this.lblPlacarJog1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPlacarJog1.Location = new System.Drawing.Point(88, 198);
+            this.lblPlacarJog1.Location = new System.Drawing.Point(88, 203);
             this.lblPlacarJog1.Name = "lblPlacarJog1";
             this.lblPlacarJog1.Size = new System.Drawing.Size(147, 23);
             this.lblPlacarJog1.TabIndex = 2;
@@ -68,7 +71,7 @@
             // 
             this.lblPlacarJog2.BackColor = System.Drawing.Color.LightGray;
             this.lblPlacarJog2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPlacarJog2.Location = new System.Drawing.Point(305, 198);
+            this.lblPlacarJog2.Location = new System.Drawing.Point(305, 203);
             this.lblPlacarJog2.Name = "lblPlacarJog2";
             this.lblPlacarJog2.Size = new System.Drawing.Size(150, 23);
             this.lblPlacarJog2.TabIndex = 3;
@@ -81,20 +84,30 @@
             this.btnPlay.TabIndex = 4;
             this.btnPlay.Text = "Jogar";
             this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // txtboxNickName1
             // 
-            this.txtboxNickName1.Location = new System.Drawing.Point(88, 11);
+            this.txtboxNickName1.Location = new System.Drawing.Point(88, 16);
             this.txtboxNickName1.Name = "txtboxNickName1";
             this.txtboxNickName1.Size = new System.Drawing.Size(147, 20);
             this.txtboxNickName1.TabIndex = 5;
             // 
             // txtboxNickName2
             // 
-            this.txtboxNickName2.Location = new System.Drawing.Point(308, 11);
+            this.txtboxNickName2.Location = new System.Drawing.Point(308, 16);
             this.txtboxNickName2.Name = "txtboxNickName2";
             this.txtboxNickName2.Size = new System.Drawing.Size(147, 20);
             this.txtboxNickName2.TabIndex = 6;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Location = new System.Drawing.Point(80, 8);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(384, 230);
+            this.panel1.TabIndex = 7;
             // 
             // frmSorteioDados
             // 
@@ -108,6 +121,7 @@
             this.Controls.Add(this.lblPlacarJog1);
             this.Controls.Add(this.picBoxQuadradro2);
             this.Controls.Add(this.picBoxQuadradro1);
+            this.Controls.Add(this.panel1);
             this.Name = "frmSorteioDados";
             this.Text = "SorteioDados";
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro1)).EndInit();
@@ -126,5 +140,6 @@
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.TextBox txtboxNickName1;
         private System.Windows.Forms.TextBox txtboxNickName2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
