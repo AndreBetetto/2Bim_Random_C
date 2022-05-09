@@ -66,6 +66,12 @@
     <Compile Include="frmSorteioDados.Designer.cs">
       <DependentUpon>frmSorteioDados.cs</DependentUpon>
     </Compile>
+    <Compile Include="resultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resultado.Designer.cs">
+      <DependentUpon>resultado.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +90,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="resultado.resx">
+      <DependentUpon>resultado.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

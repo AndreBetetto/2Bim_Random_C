@@ -85,6 +85,14 @@ namespace _03AndreRandom72B
             {
                 lblResultadoVencedor.Text = "Empate";
             }
+            else
+                if( vit1 == vit2)
+            {
+                lblResultadoVencedor.Text = "Empate";
+            }
+
+            resultado res = new resultado(vit1, vit2, emp, txtboxNickName1.Text, txtboxNickName2.Text);
+            res.ShowDialog();        
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -93,5 +101,12 @@ namespace _03AndreRandom72B
             FormRandom f2 = new FormRandom();
             f2.ShowDialog();
         }
+
+        private void btnResult_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        
     }
 }

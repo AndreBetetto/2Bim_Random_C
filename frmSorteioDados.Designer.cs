@@ -39,8 +39,9 @@
             this.lblEmpates = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblTextoVencedor = new System.Windows.Forms.Label();
             this.lblResultadoVencedor = new System.Windows.Forms.Label();
+            this.lblTextoVencedor = new System.Windows.Forms.Label();
+            this.btnResult = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -102,6 +103,8 @@
             this.txtboxNickName1.Name = "txtboxNickName1";
             this.txtboxNickName1.Size = new System.Drawing.Size(147, 20);
             this.txtboxNickName1.TabIndex = 5;
+            this.txtboxNickName1.Text = "jogador 1";
+            this.txtboxNickName1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtboxNickName2
             // 
@@ -109,10 +112,12 @@
             this.txtboxNickName2.Name = "txtboxNickName2";
             this.txtboxNickName2.Size = new System.Drawing.Size(147, 20);
             this.txtboxNickName2.TabIndex = 6;
+            this.txtboxNickName2.Text = "jogador 2";
+            this.txtboxNickName2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(189)))), ((int)(((byte)(117)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.lblEmpates);
             this.panel1.Location = new System.Drawing.Point(80, 8);
@@ -141,13 +146,26 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(148)))), ((int)(((byte)(79)))));
             this.panel2.Controls.Add(this.lblResultadoVencedor);
             this.panel2.Controls.Add(this.lblTextoVencedor);
             this.panel2.Location = new System.Drawing.Point(544, 92);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(215, 134);
             this.panel2.TabIndex = 9;
+            this.panel2.Visible = false;
+            // 
+            // lblResultadoVencedor
+            // 
+            this.lblResultadoVencedor.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultadoVencedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(239)))), ((int)(((byte)(192)))));
+            this.lblResultadoVencedor.Location = new System.Drawing.Point(3, 78);
+            this.lblResultadoVencedor.Name = "lblResultadoVencedor";
+            this.lblResultadoVencedor.Size = new System.Drawing.Size(209, 46);
+            this.lblResultadoVencedor.TabIndex = 1;
+            this.lblResultadoVencedor.Text = "label2";
+            this.lblResultadoVencedor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblResultadoVencedor.Visible = false;
             // 
             // lblTextoVencedor
             // 
@@ -158,23 +176,25 @@
             this.lblTextoVencedor.TabIndex = 0;
             this.lblTextoVencedor.Text = "O vencedor é...";
             this.lblTextoVencedor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTextoVencedor.Visible = false;
             // 
-            // lblResultadoVencedor
+            // btnResult
             // 
-            this.lblResultadoVencedor.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultadoVencedor.ForeColor = System.Drawing.Color.Maroon;
-            this.lblResultadoVencedor.Location = new System.Drawing.Point(3, 78);
-            this.lblResultadoVencedor.Name = "lblResultadoVencedor";
-            this.lblResultadoVencedor.Size = new System.Drawing.Size(209, 46);
-            this.lblResultadoVencedor.TabIndex = 1;
-            this.lblResultadoVencedor.Text = "label2";
-            this.lblResultadoVencedor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnResult.Location = new System.Drawing.Point(589, 333);
+            this.btnResult.Name = "btnResult";
+            this.btnResult.Size = new System.Drawing.Size(75, 23);
+            this.btnResult.TabIndex = 10;
+            this.btnResult.Text = "Resultado";
+            this.btnResult.UseVisualStyleBackColor = true;
+            this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
             // frmSorteioDados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(225)))), ((int)(((byte)(151)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnResult);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtboxNickName2);
@@ -211,5 +231,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblResultadoVencedor;
         private System.Windows.Forms.Label lblTextoVencedor;
+        private System.Windows.Forms.Button btnResult;
     }
 }
