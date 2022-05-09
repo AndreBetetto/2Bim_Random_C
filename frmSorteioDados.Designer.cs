@@ -42,10 +42,14 @@
             this.lblResultadoVencedor = new System.Windows.Forms.Label();
             this.lblTextoVencedor = new System.Windows.Forms.Label();
             this.btnResult = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.lbl = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro2)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // picBoxQuadradro1
@@ -186,7 +190,40 @@
             this.btnResult.TabIndex = 10;
             this.btnResult.Text = "Resultado";
             this.btnResult.UseVisualStyleBackColor = true;
+            this.btnResult.Visible = false;
             this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(501, 66);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 11;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(498, 42);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(100, 13);
+            this.lbl.TabIndex = 12;
+            this.lbl.Text = "Número de rodadas";
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(501, 232);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 13;
+            this.btnReset.Text = "Resetar";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // frmSorteioDados
             // 
@@ -194,6 +231,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(225)))), ((int)(((byte)(151)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.lbl);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.btnResult);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnBack);
@@ -211,6 +251,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQuadradro2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,5 +273,8 @@
         private System.Windows.Forms.Label lblResultadoVencedor;
         private System.Windows.Forms.Label lblTextoVencedor;
         private System.Windows.Forms.Button btnResult;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Button btnReset;
     }
 }

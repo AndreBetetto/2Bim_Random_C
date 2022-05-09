@@ -11,12 +11,14 @@ using System.IO;
 
 namespace _03AndreRandom72B
 {
+
     public partial class frmSorteioDados : Form
     {
         private Random sort = new Random();
         int vit1 = 0;
         int vit2 = 0;
         int emp = 0;
+        int count = 0;
         public frmSorteioDados()
         {
             InitializeComponent();
@@ -50,8 +52,8 @@ namespace _03AndreRandom72B
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            
 
+            count++;    
             int resultado = DadinhosMuchoLocoImg(ref picBoxQuadradro1, ref picBoxQuadradro2);
             if(resultado == 1)
             {
@@ -90,9 +92,14 @@ namespace _03AndreRandom72B
             {
                 lblResultadoVencedor.Text = "Empate";
             }
+            
+            if(count == numericUpDown1.Value)
+            {
+                resultado res = new resultado(vit1, vit2, emp, txtboxNickName1.Text, txtboxNickName2.Text);
+                res.ShowDialog();
 
-            resultado res = new resultado(vit1, vit2, emp, txtboxNickName1.Text, txtboxNickName2.Text);
-            res.ShowDialog();        
+            }
+                    
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -107,6 +114,20 @@ namespace _03AndreRandom72B
             
         }
 
-        
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            if(numericUpDown1.Value < 1)
+            {
+                MessageBox.Show("Ta errado!");
+                numericUpDown1.Value = 1;
+            }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            frmSorteioDados NewForm = new frmSorteioDados();
+            NewForm.Show();
+            this.Dispose(false);
+        }
     }
 }

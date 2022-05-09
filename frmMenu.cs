@@ -30,5 +30,12 @@ namespace _03AndreRandom72B
             frmSorteioDados f2 = new frmSorteioDados();
             f2.ShowDialog();
         }
+
+        private void btnTimer_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Timer f5 = new Timer();
+            f5.ShowDialog();
+        }
     }
 }

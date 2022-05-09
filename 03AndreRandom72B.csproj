@@ -72,6 +72,12 @@
     <Compile Include="resultado.Designer.cs">
       <DependentUpon>resultado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Timer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timer.Designer.cs">
+      <DependentUpon>Timer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +98,9 @@
     </Compile>
     <EmbeddedResource Include="resultado.resx">
       <DependentUpon>resultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Timer.resx">
+      <DependentUpon>Timer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

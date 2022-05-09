@@ -30,6 +30,7 @@
         {
             this.btnSorteioJogos = new System.Windows.Forms.Button();
             this.btnDados = new System.Windows.Forms.Button();
+            this.btnTimer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSorteioJogos
@@ -52,11 +53,22 @@
             this.btnDados.UseVisualStyleBackColor = true;
             this.btnDados.Click += new System.EventHandler(this.btnDados_Click);
             // 
+            // btnTimer
+            // 
+            this.btnTimer.Location = new System.Drawing.Point(332, 135);
+            this.btnTimer.Name = "btnTimer";
+            this.btnTimer.Size = new System.Drawing.Size(100, 58);
+            this.btnTimer.TabIndex = 2;
+            this.btnTimer.Text = "Timer";
+            this.btnTimer.UseVisualStyleBackColor = true;
+            this.btnTimer.Click += new System.EventHandler(this.btnTimer_Click);
+            // 
             // FormRandom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 476);
+            this.Controls.Add(this.btnTimer);
             this.Controls.Add(this.btnDados);
             this.Controls.Add(this.btnSorteioJogos);
             this.Name = "FormRandom";
@@ -69,6 +81,7 @@
 
         private System.Windows.Forms.Button btnSorteioJogos;
         private System.Windows.Forms.Button btnDados;
+        private System.Windows.Forms.Button btnTimer;
     }
 }
 

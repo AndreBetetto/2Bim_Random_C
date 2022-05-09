@@ -36,6 +36,9 @@ namespace _03AndreRandom72B
                 lblResultadoVencedor.Text = "Empate";
             }
             /*btnVoltar.Click  frmSorteioDados res = frmSorteioDados(vit1, vit2, emp, nome1, nome2)*/
+            lblJog1.Text = nome1 + " com " + vit1.ToString() + " vitórias.";
+            lbljog2.Text = nome2 + " com " + vit2.ToString() + " vitórias.";
+            lblEmp.Text = emp.ToString() + " empates.";
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
